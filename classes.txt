@@ -1,0 +1,8 @@
+Head
+Arm
+Body
+Chimp
+BearHead
+BearLeg
+BearBody
+Bear
