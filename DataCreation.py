@@ -12,7 +12,7 @@ def calculate_brightness(image, x1, y1, x2, y2):
     brightness = scale = len(histogram)
 
     for index in range(0, scale):
-        ratio = histogram[index] / pixels
+        ratio = histogram[index] / (pixels+1)
         brightness += ratio * (-scale + index)
 
     return 1 if brightness == 255 else brightness / scale
@@ -20,7 +20,7 @@ def calculate_brightness(image, x1, y1, x2, y2):
 def match_brightness(image, brightness):
   width, height = bg_image.size
   image_brightness = calculate_brightness(image, 0, 0, width,height)
-  brightness_dif = (brightness-image_brightness)+0.3
+  brightness_dif = (brightness-image_brightness)+0.45
 
   rgb_im = image.convert('RGBA')
   #Modify the brightness of each pixel in the image
@@ -48,10 +48,10 @@ def match_brightness(image, brightness):
   return rgb_im
 
 #Get background images
-num_of_backgrounds = 20
+num_of_backgrounds = 19
 backgrounds = []
 for i in range(num_of_backgrounds):
-  im = Image.open( str('D:/cropped_images/content/background ('+str(i+1)+').png') , 'r')
+  im = Image.open( str('D:/Git_Repos/Realtime_Animal_Tracking/Realtime_Animal_Tracking/Backgrounds/background ('+str(i+1)+').png') , 'r')
   backgrounds.append(im)
  
 classes = {
@@ -65,116 +65,274 @@ classes = {
     "Bear": 7
 }
 
-images = []
-type_class = []
+#images = []
+#type_class = []
 
 import os
+os.chdir('D:/Git_Repos/Realtime_Animal_Tracking/Realtime_Animal_Tracking/')
 
-image_dir = 'D:/cropped_images/content/cropped_images/'
-for filename in os.listdir(image_dir):
-    if os.path.splitext(filename)[1].lower() in ['.png', '.jpg', '.jpeg']:
-      im = Image.open( str('D:/cropped_images/content/cropped_images/'+filename) , 'r')
-      images.append(im)
-      name, _ = ''.join([i for i in filename if not i.isdigit()]).split('.')
-      #print(name)
-      type_class.append(classes[name])
+images = []
+image_directories = []
+box_data = []
+box_ids = []
+with open('D:/Git_Repos/Realtime_Animal_Tracking/Realtime_Animal_Tracking/image_data.csv', 'r') as f:
+  lines = f.readlines()
+  for line in lines:
+    split = line.split(' ')
+    directory = split.pop(0)
+    boxes = []
+    ids = []
+    for box in split:
+      sep = box.split(',')
+      if(sep[0] == '\n'):
+        continue
+      x1 = float(sep[0])
+      y1 = float(sep[1])
+      x2 = float(sep[2])
+      y2 = float(sep[3])
+      id = int(sep[4])
+      boxes.append([x1,y1,x2,y2])
+      ids.append(id)
+    
+    im = Image.open(directory, 'r')
+    images.append(im)
+    image_directories.append(directory)
+    box_data.append(boxes)
+    box_ids.append(ids)
+
+
+#image_dir = 'D:/cropped_images/content/cropped_images/'
+#for filename in os.listdir(image_dir):
+#    if os.path.splitext(filename)[1].lower() in ['.png', '.jpg', '.jpeg']:
+#      im = Image.open( str('D:/cropped_images/content/cropped_images/'+filename) , 'r')
+#      images.append(im)
+ #     name, _ = ''.join([i for i in filename if not i.isdigit()]).split('.')
+ #     #print(name)
+ #     type_class.append(classes[name])
 
 import random
-shuffle = list(zip(images, type_class))
+shuffle = list(zip(images, image_directories, box_data, box_ids))
 random.shuffle(shuffle)
-images, type_class = zip(*shuffle)
+images, image_directories, box_data, box_ids = zip(*shuffle)
 #get forest landscape background images
+test_image_num = 500
 
-#for image in images: c
-
-count = 5335
+scales = [0.3, 0.5, 1]#,500,700]
+count = 0
+print(len(images))
 #image_data = 'image_data.csv'
-for i in range(2):
-  for ind, img in enumerate(images):
+for ind, img in enumerate(images):
+  for scale in scales:
     #image bounding box = dir(i)
     bg_image=random.choice(backgrounds)
     width, height = bg_image.size
     #Get a copy of the background to paste on
     bg_copy = bg_image.copy()
-    margin_size = 40
 
-    #paste the image somewhere in the background
-    x = random.randint(margin_size, width-margin_size)
-    y = random.randint(margin_size, height-margin_size)
+    #scale += 100/img.width
+    new_im = img.copy()
 
-    num = random.randrange(2, 10)*0.1
-    img = img.resize((int(img.width*num), int(img.height*num)), Image.ANTIALIAS)
+    #Scale the image
+    #new_im = new_im.resize((int(scale), int(scale)), Image.ANTIALIAS)
+    #Dont forget to scale the bounding boxes :
+    #also get the bounding box size of all boxes
+    max_x = 0
+    min_x = 3000
+    max_y = 0
+    min_y = 3000
+    new_bboxs = []
+    for bbox in box_data[ind]:
+      box = []
+      for i in range(len(bbox)):
+        #if x value
+        if(i == 0 or i == 2):
+          new_len = bbox[i]#*x_scale
+          if(max_x < new_len):
+            max_x = new_len
+          if(min_x > new_len):
+            min_x = new_len
+
+        #if y value
+        if(i == 1 or i == 3):
+          new_len = bbox[i]#*y_scale
+          if(max_y < new_len):
+            max_y = new_len
+          if(min_y > new_len):
+            min_y = new_len
+
+        box.append(new_len)
+
+      new_bboxs.append(box)
+
+    c_left = 120
+    if(min_x-c_left < 0):
+      c_left = min_x
+    c_top = 120
+    if(min_y-c_top < 0):
+      c_top = min_y
+    c_right = max_x+120
+    if(c_right > new_im.width):
+      c_right = new_im.width
+    c_bottom = max_y+120
+    if(c_bottom > new_im.height):
+      c_bottom = new_im.height
+    new_im = new_im.crop((min_x-c_left, min_y-c_top, c_right, c_bottom))
+    for bbox in new_bboxs:
+      for i in range(len(bbox)):
+        if(i == 0 or i == 2):
+          bbox[i] -= (min_x-c_left)
+        if(i == 1 or i == 3):
+          bbox[i] -= (min_y-c_top)
+
+    new_im = new_im.resize((int(new_im.width*scale), int(new_im.height*scale)), Image.ANTIALIAS)
+    for bbox in new_bboxs:
+      for i in range(len(bbox)):
+        bbox[i] = int(bbox[i]*scale)
+
+
     #Get image dimensions
-    im_width, im_height = img.size
+    im_width = (max_x - min_x)
+    im_height = (max_y - min_y)
+
+    #get random paste coordinates
+    #if(new_im.width < bg_copy.width):
+    #  x = random.randint(-bg_copy.width+new_im.width+1, 0)
+    #else:
+    #  x = 0
+    #if(new_im.height < bg_copy.height):
+    #  y = random.randint(-bg_copy.height+new_im.height+1, 0)
+    #else:
+    #  y = 0
+    if(new_im.width == 0 or bg_copy.width == 0 or new_im.height == 0 or bg_copy.height == 0):
+      continue
+
+    if(new_im.width > bg_copy.width):
+      x=random.randint(1,bg_copy.width)
+      pw = bg_copy.width-1
+    else:
+      x=random.randint(1,new_im.width)
+      pw = new_im.width-1
+
+    if(new_im.height > bg_copy.height):
+      y=random.randint(1,bg_copy.height)
+      ph = bg_copy.height-1
+    else:
+      y=random.randint(1,new_im.height)
+      ph = new_im.height-1
+
+    print("x",x)
+    print("y",y)
+
     #Get brightness of background region
-    bg_region_brightness = calculate_brightness(bg_copy, x, y, x+im_width, y+im_height)
+    bg_region_brightness = calculate_brightness(bg_copy, x+bg_copy.width-new_im.width, y+bg_copy.height-new_im.height, x+bg_copy.width+new_im.width, y+bg_copy.height+new_im.height)
     #Match the images brightness with the background region
-    img = match_brightness(img, bg_region_brightness)
-    
+    new_im = match_brightness(new_im, bg_region_brightness)
+
     #bg_copy = bg_copy.convert('RGBA')
-    img = img.convert('RGBA')
+    new_im = new_im.convert('RGBA')
+
+    #bg_copy = bg_copy.crop((x, y, x+im_width, y+im_height))
     
-    new_img = Image.new('RGBA', bg_copy.size, (0, 0, 0, 0))
-    new_img.paste(bg_copy, (0,0))
-    new_img.paste(img, (x,y), mask=img)
+    new_img = Image.new('RGBA', new_im.size, (0, 0, 0, 0))
 
-    max_size = 416
-    new_width = im_width + 40
-    if(new_width > max_size):
-      new_width = max_size
-    new_height = im_height + 40
-    if(new_height > max_size):
-      new_height = max_size
+    new_img.paste(bg_copy, (x-pw,y-ph))
+    new_img.paste(new_im, (0,0), mask=new_im)
 
-    half_width = int(new_width/2)
-    half_height = int(new_height/2)
+    #for bbox in new_bboxs:
+    #  for i in range(len(bbox)):
+     #   if(i == 0 or i == 2):
+     #     bbox[i] += x
+     #   if(i == 1 or i == 3):
+     #     bbox[i] += y
 
-    left = x-half_width
-    if(left < 0):
-      left = 0
-    upper = y-half_height
-    if(upper < 0):
-      upper = 0
-    right = x+im_width + half_width + 40
-    if(right > width):
-      right = width
-    lower = y+im_height + half_height + 40
-    if(lower > height):
-      lower = height
+    #bg_scale = 416/new_img.width
+    #width_dif = new_img.width-new_img.width*bg_scale
+    #height_dif = new_img.height-new_img.height*bg_scale
+    #new_img = new_img.resize((int(new_img.width*bg_scale), int(new_img.height*bg_scale)), Image.ANTIALIAS)
 
-    new_img = new_img.crop((left, upper, right, lower))
-    #bg_copy.paste(img, (x, y, x+im_width, y+im_height), img)
-    width, height = new_img.size
+    
+    #for bbox in new_bboxs:
+    #  for i in range(len(bbox)):
+    #    if(i == 0 or i == 2):
+    #      bbox[i] -= width_dif
+    #      bbox[i]=bbox[i]*bg_scale
+     #     if(bbox[i] > new_img.width):
+    #        bbox[i] = new_img.width
+     #   if(i == 1 or i == 3):
+    #      bbox[i] -= height_dif
+    #      bbox[i]=bbox[i]*bg_scale
+    #      if(bbox[i] > new_img.height):
+    #        bbox[i] = new_img.height
+    #    if(bbox[i]<0):
+    #        bbox[i] = 0
+
+
+    ########
+    
+    """
+    margin = 50
+    if(min_x-margin > 0):
+      c_left = min_x-margin
+    else:
+      c_left = 0
+    
+    if(max_x+margin < width):
+      c_right = max_x+margin
+    else:
+      c_right = width
+
+    if(min_y-margin > 0):
+      c_top = min_y-margin
+    else:
+      c_top = 0
+    
+    if(max_y+margin < height):
+      c_bottom = max_y+margin
+    else:
+      c_bottom = height
+
+    #print((min_x, min_y, max_x, max_y))
+    for bbox in new_bboxs:
+      for i in range(len(bbox)):
+        if(i == 0 or i == 2):
+          bbox[i] = bbox[i]-c_left
+        else:
+          bbox[i] = bbox[i]-c_top
+
+    new_img = new_img.crop((c_left, c_top, c_right, c_bottom))
+    """
     #Save the image
-    count+=1
     
-    if(count > 5000):
+
+    if(ind > len(images)-500):
       path_name =  "yolov4test/image"
     else:
       path_name =  "yolov4train/image"
-    new_img.save('D:/cropped_images/content/' +path_name+str(count)+'.png', 'png')
+
+    new_img.save('D:/Git_Repos/Realtime_Animal_Tracking/Realtime_Animal_Tracking/' +path_name+str(count)+'.png', 'png')
 
     if(count % 50 == 0):
       print(str(count) + ' out of 6000ish')
 
-    id = type_class[ind]
-
-    bb_right = half_width+im_width
-    if(bb_right > width):
-      bb_right = width-1
-    bb_bot = half_height+im_height
-    if(bb_bot > height):
-      bb_bot = height-1
-
-    bb = [x-left, y-upper, bb_right, bb_bot]
+    class_ids = box_ids[ind]
     #centre_x = (bb[0] + (im_width/2))/width
     #centre_y = (bb[1] + (im_height/2))/height
     #bb_width = im_width/width
     #bb_height = im_height/height
     #Save the corresponding bounding box ground truth, image name and class
-    if(count > 5000):
-      with open('D:/cropped_images/content/yolov4test/DatasetTest.txt','a+') as fd:
-        fd.write("%s %i,%i,%i,%i,%i\n" % ('./model_data/'+path_name+str(count)+'.png', bb[0], bb[1], bb[2], bb[3], id))
+    if(ind > len(images)-500):
+      save_dir = './yolov4test/DatasetTest.txt'
     else:
-      with open('D:/cropped_images/content/yolov4train/DatasetTrain.txt','a+') as fd:
-        fd.write("%s %i,%i,%i,%i,%i\n" % ('./model_data/'+path_name+str(count)+'.png', bb[0], bb[1], bb[2], bb[3], id))
+      save_dir = './yolov4train/DatasetTrain.txt'
+
+    with open(save_dir,'a+') as fd:
+      fd.write("%s " % ('./model_data/'+str(count)+'.png'))
+    for j,class_id in enumerate(class_ids):
+      bb = new_bboxs[j]
+      with open(save_dir,'a') as fd:
+        fd.write("%i,%i,%i,%i,%i " % (bb[0], bb[1], bb[2], bb[3], class_id))
+
+    with open(save_dir, 'a+') as fd:
+      fd.write("\n")
+
+    count+=1

@@ -19,6 +19,9 @@ from yolov3.configs import *
 from yolov3.yolov4 import *
 from tensorflow.python.saved_model import tag_constants
 
+#Custom import seq-nms
+from seq_nms import *
+
 def load_yolo_weights(model, weights_file):
     tf.keras.backend.clear_session() # used to reset layer names
     # load Darknet original weights to TensorFlow model
@@ -91,7 +94,7 @@ def Load_Yolo_model():
             yolo = Create_Yolo(input_size=YOLO_INPUT_SIZE, CLASSES=YOLO_COCO_CLASSES)
             load_yolo_weights(yolo, Darknet_weights) # use Darknet weights
         else:
-            checkpoint = f"D:/YoloV4/TensorFlow-2.x-YOLOv3-master/checkpoints/{TRAIN_MODEL_NAME}"
+            checkpoint = f"/content/checkpoints/{TRAIN_MODEL_NAME}"
             if TRAIN_YOLO_TINY:
                 checkpoint += "_Tiny"
             print("Loading custom weights from:", checkpoint)
@@ -472,6 +475,9 @@ def detect_video(Yolo, video_path, output_path, input_size=416, show=False, CLAS
         
         pred_bbox = [tf.reshape(x, (-1, tf.shape(x)[-1])) for x in pred_bbox]
         pred_bbox = tf.concat(pred_bbox, axis=0)
+
+        print(pred_bbox)
+        #seq_nms(pred_bbox, scores, labels=None, linkage_threshold=0.5, nms_threshold=0.3, score_metric='avg')
 
         bboxes = postprocess_boxes(pred_bbox, original_image, input_size, score_threshold)
         bboxes = nms(bboxes, iou_threshold, method='nms')
