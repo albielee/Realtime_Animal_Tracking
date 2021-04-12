@@ -37,8 +37,8 @@ if YOLO_TYPE                == "yolov3":
 TRAIN_YOLO_TINY             = True
 TRAIN_SAVE_BEST_ONLY        = True # saves only best model according validation loss (True recommended)
 TRAIN_SAVE_CHECKPOINT       = True # saves all best validated checkpoints in training process (may require a lot disk space) (False recommended)
-TRAIN_CLASSES               = "D:/YoloV4/TensorFlow-2.x-YOLOv3-master/model_data/DatasetNames.names"
-TRAIN_ANNOT_PATH            = "./model_data/DatasetTrain.txt"
+TRAIN_CLASSES               = "/content/Realtime_Animal_Tracking/model_data/DatasetNames.names"
+TRAIN_ANNOT_PATH            = "/content/Realtime_Animal_Tracking/model_data/DatasetTrain.txt"
 TRAIN_LOGDIR                = "log"
 TRAIN_CHECKPOINTS_FOLDER    = "checkpoints"
 TRAIN_MODEL_NAME            = f"{YOLO_TYPE}_custom"
@@ -54,7 +54,7 @@ TRAIN_WARMUP_EPOCHS         = 2
 TRAIN_EPOCHS                = 60
 
 # TEST options
-TEST_ANNOT_PATH             = "./model_data/DatasetTest.txt"
+TEST_ANNOT_PATH             = "/content/Realtime_Animal_Tracking/model_data/DatasetTest.txt"
 TEST_BATCH_SIZE             = 32
 TEST_INPUT_SIZE             = 416
 TEST_DATA_AUG               = False
