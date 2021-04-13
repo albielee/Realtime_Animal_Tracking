@@ -12,14 +12,14 @@
 # YOLO options
 YOLO_TYPE                   = "yolov4" # yolov4 or yolov3
 YOLO_FRAMEWORK              = "tf" # "tf" or "trt"
-YOLO_V3_WEIGHTS             = "/content/Realtime_Animal_Tracking/model_data/yolov3.weights"
+YOLO_V3_WEIGHTS             = "/content/Realtime_Animal_Tracking/Yolo/model_data/yolov3.weights"
 YOLO_V4_WEIGHTS             = "/content/Realtime_Animal_Tracking/model_data/yolov4.weights"
-YOLO_V3_TINY_WEIGHTS        = "/content/Realtime_Animal_Tracking/model_data/yolov3-tiny.weights"
-YOLO_V4_TINY_WEIGHTS        = "/content/Realtime_Animal_Tracking/model_data/yolov4-tiny.weights"
+YOLO_V3_TINY_WEIGHTS        = "/content/Realtime_Animal_Tracking/Yolo/model_data/yolov3-tiny.weights"
+YOLO_V4_TINY_WEIGHTS        = "/content/Realtime_Animal_Tracking/Yolo/model_data/yolov4-tiny.weights"
 YOLO_TRT_QUANTIZE_MODE      = "INT8" # INT8, FP16, FP32
 YOLO_CUSTOM_WEIGHTS         = True # "checkpoints/yolov3_custom" # used in evaluate_mAP.py and custom model detection, if not using leave False
                             # YOLO_CUSTOM_WEIGHTS also used with TensorRT and custom model detection
-YOLO_COCO_CLASSES           = "model_data/coco/coco.names"
+YOLO_COCO_CLASSES           = "/content/Realtime_Animal_Tracking/Yolo/model_data/coco/coco.names"
 YOLO_STRIDES                = [8, 16, 32]
 YOLO_IOU_LOSS_THRESH        = 0.5
 YOLO_ANCHOR_PER_SCALE       = 3
@@ -34,7 +34,7 @@ if YOLO_TYPE                == "yolov3":
                                [[30,  61], [62,   45], [59,  119]],
                                [[116, 90], [156, 198], [373, 326]]]
 # Train options
-TRAIN_YOLO_TINY             = True
+TRAIN_YOLO_TINY             = False
 TRAIN_SAVE_BEST_ONLY        = True # saves only best model according validation loss (True recommended)
 TRAIN_SAVE_CHECKPOINT       = True # saves all best validated checkpoints in training process (may require a lot disk space) (False recommended)
 TRAIN_CLASSES               = "/content/Realtime_Animal_Tracking/model_data/DatasetNames.names"

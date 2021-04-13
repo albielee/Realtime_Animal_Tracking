@@ -20,7 +20,7 @@ from yolov3.yolov4 import *
 from tensorflow.python.saved_model import tag_constants
 
 #Custom import seq-nms
-from seq_nms import *
+#from seq_nms import *
 
 def load_yolo_weights(model, weights_file):
     tf.keras.backend.clear_session() # used to reset layer names
@@ -477,7 +477,7 @@ def detect_video(Yolo, video_path, output_path, input_size=416, show=False, CLAS
         pred_bbox = tf.concat(pred_bbox, axis=0)
 
         print(pred_bbox)
-        #seq_nms(pred_bbox, scores, labels=None, linkage_threshold=0.5, nms_threshold=0.3, score_metric='avg')
+        #seq_nms(pred_bbox, scores, labels=bboxes[:, 5], linkage_threshold=0.5, nms_threshold=0.3, score_metric='avg')
 
         bboxes = postprocess_boxes(pred_bbox, original_image, input_size, score_threshold)
         bboxes = nms(bboxes, iou_threshold, method='nms')
