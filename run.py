@@ -1,3 +1,22 @@
+from PIL import Image
+
+for i in range(1060):
+	im1 = Image.open(r'./model_data/image'+str(i)+'.png')
+	rgb_im = im1.convert('RGB')
+	rgb_im.save(r'./model_data/jpgs/image'+str(i)+'.jpg')
+
+"""
+f = open('./model_data/DatasetTest.txt', 'r')
+lines = f.readlines()
+
+for i in range(len(lines)):
+	lines[i] = lines[i].replace('.png','.jpg')
+
+f = open('./model_data/DatasetTest.txt','w')
+f.writelines(lines)
+f.close()
+"""
+"""
 f = open('DatasetTest.txt', 'r')
 lines = f.readlines()
 
@@ -12,7 +31,7 @@ for i in range(len(lines)):
 f = open('DatasetTest2.txt','w')
 f.writelines(lines)
 f.close()
-
+"""
 """images = []
 image_directories = []
 box_data = []
