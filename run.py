@@ -1,4 +1,19 @@
-images = []
+f = open('DatasetTest.txt', 'r')
+lines = f.readlines()
+
+for i in range(len(lines)):
+	splits = lines[i].split(' ')
+	splits.pop()
+	lines[i] = splits.pop(0)
+	for s in splits:
+		lines[i] += ' ' + s
+	lines[i]+='\n'
+
+f = open('DatasetTest2.txt','w')
+f.writelines(lines)
+f.close()
+
+"""images = []
 image_directories = []
 box_data = []
 box_ids = []
@@ -35,7 +50,7 @@ for i in range(len(image_directories)):
 
 	with open('DatasetTrain2.txt', 'a+') as fd:
 		fd.write("\n")
-
+"""
 """
 f = open('DatasetTrain.txt', 'r')
 lines = f.readlines()
