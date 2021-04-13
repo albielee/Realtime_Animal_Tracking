@@ -90,7 +90,7 @@ with open('D:/Git_Repos/Realtime_Animal_Tracking/Realtime_Animal_Tracking/image_
       y1 = float(sep[1])
       x2 = float(sep[2])
       y2 = float(sep[3])
-      id = int(sep[4])
+      id = int(sep[4])-1
       boxes.append([x1,y1,x2,y2])
       ids.append(id)
     
@@ -220,9 +220,6 @@ for ind, img in enumerate(images):
       y=random.randint(1,new_im.height)
       ph = new_im.height-1
 
-    print("x",x)
-    print("y",y)
-
     #Get brightness of background region
     bg_region_brightness = calculate_brightness(bg_copy, x+bg_copy.width-new_im.width, y+bg_copy.height-new_im.height, x+bg_copy.width+new_im.width, y+bg_copy.height+new_im.height)
     #Match the images brightness with the background region
@@ -304,7 +301,7 @@ for ind, img in enumerate(images):
     #Save the image
     
 
-    if(ind > len(images)-500):
+    if(ind > len(images)-100):
       path_name =  "yolov4test/image"
     else:
       path_name =  "yolov4train/image"
@@ -320,13 +317,13 @@ for ind, img in enumerate(images):
     #bb_width = im_width/width
     #bb_height = im_height/height
     #Save the corresponding bounding box ground truth, image name and class
-    if(ind > len(images)-500):
+    if(ind > len(images)-100):
       save_dir = './yolov4test/DatasetTest.txt'
     else:
       save_dir = './yolov4train/DatasetTrain.txt'
 
     with open(save_dir,'a+') as fd:
-      fd.write("%s " % ('./model_data/'+str(count)+'.png'))
+      fd.write("%s " % ('./model_data/'+'images'+str(count)+'.png'))
     for j,class_id in enumerate(class_ids):
       bb = new_bboxs[j]
       with open(save_dir,'a') as fd:
