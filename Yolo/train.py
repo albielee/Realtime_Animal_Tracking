@@ -9,6 +9,7 @@
 #
 #================================================================
 import os
+import matplotlib as plt
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 from tensorflow.python.client import device_lib
@@ -89,8 +90,10 @@ def main():
                     print("skipping", yolo.layers[i].name)
     
     optimizer = tf.keras.optimizers.Adam()
-
-
+    #Changed parameter#
+    tot_loss = []
+    epo_list = []
+    
     def train_step(image_data, target):
         with tf.GradientTape() as tape:
             pred_result = yolo(image_data, training=True)
@@ -106,7 +109,7 @@ def main():
                 prob_loss += loss_items[2]
 
             total_loss = giou_loss + conf_loss + prob_loss
-
+ 
             gradients = tape.gradient(total_loss, yolo.trainable_variables)
             optimizer.apply_gradients(zip(gradients, yolo.trainable_variables))
 
@@ -159,6 +162,14 @@ def main():
             cur_step = results[0]%steps_per_epoch
             print("epoch:{:2.0f} step:{:5.0f}/{}, lr:{:.6f}, giou_loss:{:7.2f}, conf_loss:{:7.2f}, prob_loss:{:7.2f}, total_loss:{:7.2f}"
                   .format(epoch, cur_step, steps_per_epoch, results[1], results[2], results[3], results[4], results[5]))
+            tot_loss.append(results[5])
+            epo_list.append(epoch)
+
+        plt.xlabel('Epochs')
+        plt.ylabel('Total Loss')
+        plt.title('YoloV4 - Seq-NMS')
+        plt.legend()
+        plt.savefig('YoloV4_Seq-NMS.png')
 
         if len(testset) == 0:
             print("configure TEST options to validate model")
@@ -183,6 +194,8 @@ def main():
             
         print("\n\ngiou_val_loss:{:7.2f}, conf_val_loss:{:7.2f}, prob_val_loss:{:7.2f}, total_val_loss:{:7.2f}\n\n".
               format(giou_val/count, conf_val/count, prob_val/count, total_val/count))
+
+
 
         if TRAIN_SAVE_CHECKPOINT and not TRAIN_SAVE_BEST_ONLY:
             save_directory = os.path.join(TRAIN_CHECKPOINTS_FOLDER, TRAIN_MODEL_NAME+"_val_loss_{:7.2f}".format(total_val/count))

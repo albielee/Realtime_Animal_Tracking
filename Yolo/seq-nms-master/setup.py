@@ -1,5 +1,5 @@
 import setuptools
-import numpy
+import numpy as np
 from Cython.Build import cythonize
 
 setuptools.setup(
@@ -9,7 +9,7 @@ setuptools.setup(
     url              = 'https://github.com/tmoopenn/seq-nms',
     author           = 'Troy Moo-Penn',
     packages         = setuptools.find_packages(),
-    ext_modules      = cythonize("compute_overlap.pyx"),
-    include_dirs     = [numpy.get_include()],
+    ext_modules      = cythonize("/content/Realtime_Animal_Tracking/Yolo/seq-nms-master/compute_overlap.pyx"),
+    include_dirs     = [np.get_include()],
     setup_requires   = ["cython>=0.28", "numpy>=1.14.0"]
 )

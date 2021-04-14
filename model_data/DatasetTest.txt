@@ -1,100 +1,109 @@
-/content/Realtime_Animal_Tracking/model_data/image959.jpg 268,362,609,631,3 277,457,419,564,0 326,415,584,625,2 360,413,527,580,1
-/content/Realtime_Animal_Tracking/model_data/image960.jpg 222,296,532,878,7 251,241,516,542,4 229,545,505,873,4 206,329,461,641,0
-/content/Realtime_Animal_Tracking/model_data/image961.jpg 152,135,257,199,3 159,163,191,192,0 175,154,231,198,1 89,466,171,500,3
-/content/Realtime_Animal_Tracking/model_data/image962.jpg 220,246,391,388,3 193,345,385,509,3 230,327,293,383,0 252,303,353,375,1 230,441,341,502,1 277,256,388,310,1
-/content/Realtime_Animal_Tracking/model_data/image963.jpg 120,271,600,610,7 286,395,607,538,5 253,619,715,952,7 370,776,740,921,5 150,428,316,603,4 348,567,581,687,5 390,673,704,797,5 214,662,583,957,6 192,284,451,528,6 271,283,573,456,5
-/content/Realtime_Animal_Tracking/model_data/image964.jpg 127,133,286,250,3 130,156,180,202,0 161,179,244,253,1
-/content/Realtime_Animal_Tracking/model_data/image965.jpg 287,473,525,676,4 230,478,594,922,7 217,624,476,925,6 264,658,572,771,5
-/content/Realtime_Animal_Tracking/model_data/image966.jpg 12,8,563,524,6 0,12,616,644,7 147,0,650,745,3 63,239,557,596,4
-/content/Realtime_Animal_Tracking/model_data/image967.jpg 142,0,865,603,7 81,85,652,519,4 314,0,894,581,6 400,20,963,356,5
-/content/Realtime_Animal_Tracking/model_data/image968.jpg 64,3,554,755,7 77,460,348,764,4 194,128,570,418,5 11,39,475,569,6
-/content/Realtime_Animal_Tracking/model_data/image969.jpg 338,23,492,202,4 226,529,615,821,7 332,89,500,302,6 316,21,516,328,7 213,676,393,871,4 262,342,454,574,6 268,312,566,567,7 303,537,530,757,6 374,307,572,410,5 310,446,501,565,2 292,315,481,455,4
-/content/Realtime_Animal_Tracking/model_data/image970.jpg 202,252,442,602,6 240,250,580,755,7 266,498,479,721,4
-/content/Realtime_Animal_Tracking/model_data/image971.jpg 56,60,588,564,3 164,14,636,333,2 60,0,471,438,6
-/content/Realtime_Animal_Tracking/model_data/image972.jpg 61,151,415,483,4 83,129,635,747,7 14,276,400,664,6
-/content/Realtime_Animal_Tracking/model_data/image973.jpg 57,72,203,180,0 58,18,263,204,3 41,110,287,397,3 57,250,191,382,1 172,124,313,343,2 86,0,251,134,1 23,332,149,420,0 75,183,169,340,2 60,421,266,495,1
-/content/Realtime_Animal_Tracking/model_data/image974.jpg 88,356,596,923,7 227,340,463,579,4 241,598,565,741,5 99,454,395,868,6 242,776,585,904,5 286,461,557,600,5 411,457,506,581,5
-/content/Realtime_Animal_Tracking/model_data/image975.jpg 122,56,575,613,7 194,347,509,641,4 154,123,472,428,6
-/content/Realtime_Animal_Tracking/model_data/image976.jpg 534,358,756,551,7 533,385,653,531,4 543,318,757,561,3
-/content/Realtime_Animal_Tracking/model_data/image977.jpg 71,373,680,859,7 235,63,811,583,7 81,386,486,920,6 313,281,707,562,4 257,15,642,542,6 247,617,591,819,5 606,349,784,525,5 435,186,777,424,5
-/content/Realtime_Animal_Tracking/model_data/image978.jpg 145,92,518,399,3 207,472,473,591,5 143,265,466,587,3 385,207,487,332,1 174,254,334,376,0 167,296,472,600,7
-/content/Realtime_Animal_Tracking/model_data/image979.jpg 248,447,322,506,4 244,445,381,583,7
-/content/Realtime_Animal_Tracking/model_data/image980.jpg 34,129,583,787,3 56,322,485,702,0 355,121,497,296,0 224,467,624,744,1 249,421,543,642,0
-/content/Realtime_Animal_Tracking/model_data/image981.jpg 70,280,487,831,3 65,381,278,615,0 217,279,466,517,1 171,440,394,801,1
-/content/Realtime_Animal_Tracking/model_data/image982.jpg 20,358,472,674,3 178,478,570,685,1 142,529,323,655,0
-/content/Realtime_Animal_Tracking/model_data/image983.jpg 203,360,388,564,4 181,332,422,723,7 224,445,382,711,6
-/content/Realtime_Animal_Tracking/model_data/image984.jpg 267,200,489,478,7 282,260,401,417,6 320,438,452,544,4 312,187,486,311,5
-/content/Realtime_Animal_Tracking/model_data/image985.jpg 71,385,656,834,4 37,335,600,850,7 294,582,624,793,5
-/content/Realtime_Animal_Tracking/model_data/image986.jpg 249,87,749,710,3 416,125,728,284,1 253,287,483,535,0 317,403,731,673,1
-/content/Realtime_Animal_Tracking/model_data/image987.jpg 366,706,552,890,4 509,560,599,741,1 375,13,644,450,7 368,720,480,793,0 367,626,587,912,7
-/content/Realtime_Animal_Tracking/model_data/image988.jpg 135,522,416,723,4 94,581,351,866,6 71,537,587,866,7
-/content/Realtime_Animal_Tracking/model_data/image989.jpg 145,85,511,476,7 29,543,483,912,7 42,593,305,913,6 183,662,452,807,5 194,812,445,919,5 170,523,380,703,4 153,113,418,402,6 259,63,522,161,5
-/content/Realtime_Animal_Tracking/model_data/image990.jpg 113,5,813,686,4 11,0,831,820,7 324,359,952,754,5 470,127,935,848,6
-/content/Realtime_Animal_Tracking/model_data/image991.jpg 40,12,637,703,3 30,146,374,664,6 165,135,312,213,1
-/content/Realtime_Animal_Tracking/model_data/image992.jpg 127,156,178,190,1
-/content/Realtime_Animal_Tracking/model_data/image993.jpg 99,304,231,398,3 233,160,310,226,3 104,326,146,361,0 231,182,268,219,0 119,322,195,383,1 129,304,202,335,1 234,161,293,201,2 153,315,236,367,1 238,176,284,217,1
-/content/Realtime_Animal_Tracking/model_data/image994.jpg 153,326,259,392,0 201,254,375,412,1 167,380,356,444,1 125,79,377,465,3
-/content/Realtime_Animal_Tracking/model_data/image995.jpg 157,218,362,493,0 373,307,769,728,3 506,493,750,768,1 415,446,591,664,0 176,298,394,524,1 142,172,533,645,3
-/content/Realtime_Animal_Tracking/model_data/image996.jpg 405,357,473,446,7
-/content/Realtime_Animal_Tracking/model_data/image997.jpg 190,23,713,479,7 213,50,457,253,4 396,205,708,402,5 425,356,766,514,5
-/content/Realtime_Animal_Tracking/model_data/image998.jpg 34,106,565,557,4 0,0,789,587,7 227,17,720,315,5
-/content/Realtime_Animal_Tracking/model_data/image999.jpg 92,150,586,747,3 70,518,333,753,0 304,141,526,633,1 350,236,476,493,1 291,407,416,548,1 488,347,584,531,1 260,413,413,638,2
-/content/Realtime_Animal_Tracking/model_data/image1000.jpg 199,234,250,271,3 182,305,227,364,3 309,56,369,94,3 299,188,357,246,3 154,85,198,128,3 243,343,285,383,3 155,88,193,127,7
-/content/Realtime_Animal_Tracking/model_data/image1001.jpg 279,188,440,473,7 152,729,318,886,4 306,237,407,387,6 285,381,392,516,4 386,341,442,417,5 319,205,439,330,5 122,702,511,914,3 165,716,485,905,7
-/content/Realtime_Animal_Tracking/model_data/image1002.jpg 117,13,625,897,7 156,507,610,902,4
-/content/Realtime_Animal_Tracking/model_data/image1003.jpg 267,707,414,840,0 108,238,464,621,6 42,166,588,768,7 366,439,652,826,6 281,194,560,378,5
-/content/Realtime_Animal_Tracking/model_data/image1004.jpg 108,274,358,564,4 120,469,513,825,6 127,315,583,938,7 223,591,591,790,5
-/content/Realtime_Animal_Tracking/model_data/image1005.jpg 172,155,226,339,6
-/content/Realtime_Animal_Tracking/model_data/image1006.jpg 35,224,576,912,7 49,446,495,858,4 316,605,606,836,5 255,356,526,695,5
-/content/Realtime_Animal_Tracking/model_data/image1007.jpg 331,430,727,808,7 435,531,721,668,5 321,381,494,564,4 315,560,590,828,6 197,340,365,452,0 184,132,621,473,7 321,212,631,389,5 162,161,601,473,3
-/content/Realtime_Animal_Tracking/model_data/image1008.jpg 163,332,456,680,6 151,157,531,729,7 320,188,555,421,4 281,387,544,549,5
-/content/Realtime_Animal_Tracking/model_data/image1009.jpg 95,145,753,450,3 365,166,680,358,2
-/content/Realtime_Animal_Tracking/model_data/image1010.jpg 89,196,403,525,0 77,77,562,685,3 271,338,642,571,1
-/content/Realtime_Animal_Tracking/model_data/image1011.jpg 0,33,632,662,3 0,200,488,585,0 228,268,438,501,0 166,22,635,313,1 13,244,548,674,1
-/content/Realtime_Animal_Tracking/model_data/image1012.jpg 90,224,323,487,0 221,257,522,649,1 98,77,541,640,3 52,654,421,905,3 440,79,647,171,0 246,103,517,392,1 86,737,308,913,0 481,34,657,302,3
-/content/Realtime_Animal_Tracking/model_data/image1013.jpg 366,642,476,724,3 304,575,398,662,3 530,402,675,525,3 123,192,162,234,0 190,245,275,318,3 296,379,373,481,3 200,314,259,378,3 526,399,634,512,6 134,158,195,240,3
-/content/Realtime_Animal_Tracking/model_data/image1014.jpg 181,422,389,617,7 243,428,355,496,5 191,421,300,599,6
-/content/Realtime_Animal_Tracking/model_data/image1016.jpg 614,356,767,481,3 288,208,553,409,3 620,417,684,473,0 320,253,467,414,1 299,269,374,374,0
-/content/Realtime_Animal_Tracking/model_data/image1017.jpg 291,0,662,311,7 288,51,606,285,4
-/content/Realtime_Animal_Tracking/model_data/image1018.jpg 2,242,290,533,0 1,0,673,746,3 129,5,638,336,1 152,489,593,733,1 242,160,511,577,2
-/content/Realtime_Animal_Tracking/model_data/image1019.jpg 55,94,639,860,7 98,308,527,694,4 295,528,662,787,5 103,559,550,869,6 408,174,617,519,5
-/content/Realtime_Animal_Tracking/model_data/image1020.jpg 312,151,706,473,3 313,188,475,334,0 363,250,594,433,1 531,139,693,273,1
-/content/Realtime_Animal_Tracking/model_data/image1021.jpg 345,389,570,586,3 375,465,513,565,1 334,442,433,521,0
-/content/Realtime_Animal_Tracking/model_data/image1022.jpg 74,363,533,818,4 0,215,613,799,7
-/content/Realtime_Animal_Tracking/model_data/image1023.jpg 46,208,553,842,7 237,499,495,791,5 29,168,487,593,4 248,395,529,616,5 147,535,534,942,6
-/content/Realtime_Animal_Tracking/model_data/image1024.jpg 397,189,566,398,7 387,196,520,392,6 444,190,580,282,5 456,308,573,391,4
-/content/Realtime_Animal_Tracking/model_data/image1025.jpg 76,394,219,507,3
-/content/Realtime_Animal_Tracking/model_data/image1026.jpg 208,255,671,826,7 299,274,681,822,6 291,215,679,636,4 388,501,713,774,5
-/content/Realtime_Animal_Tracking/model_data/image1027.jpg 139,937,1280,1824,7 205,33,1216,929,7 289,845,792,1326,4 359,488,793,843,4 524,173,1162,545,5 555,1244,1201,1566,5 153,36,967,512,6 177,1114,756,1816,6
-/content/Realtime_Animal_Tracking/model_data/image1028.jpg 54,374,384,845,6 25,300,574,822,7 208,295,474,547,4 226,556,634,725,5 295,696,564,835,5 427,410,576,536,5
-/content/Realtime_Animal_Tracking/model_data/image1029.jpg 104,228,495,642,7 148,347,403,702,6 119,202,307,402,4 256,405,496,549,5
-/content/Realtime_Animal_Tracking/model_data/image1030.jpg 85,248,302,461,7 119,22,274,209,6 91,304,245,447,6 105,252,240,381,4 101,8,290,218,7
-/content/Realtime_Animal_Tracking/model_data/image1031.jpg 250,409,402,544,3 269,446,370,513,1
-/content/Realtime_Animal_Tracking/model_data/image1032.jpg 39,52,276,323,3 293,183,358,404,1 39,114,205,294,4
-/content/Realtime_Animal_Tracking/model_data/image1033.jpg 207,407,614,792,3 197,509,411,644,0 220,503,538,710,1 306,421,498,521,1 245,640,555,802,2
-/content/Realtime_Animal_Tracking/model_data/image1034.jpg 46,330,450,881,3 162,480,407,885,1 51,430,265,619,0 126,300,465,524,1
-/content/Realtime_Animal_Tracking/model_data/image1035.jpg 120,221,494,517,3 186,335,446,495,1 240,249,392,349,1 119,261,224,387,0
-/content/Realtime_Animal_Tracking/model_data/image1036.jpg 245,350,632,793,3 300,503,576,729,1
-/content/Realtime_Animal_Tracking/model_data/image1037.jpg 105,153,509,649,6 149,0,855,610,7
-/content/Realtime_Animal_Tracking/model_data/image1038.jpg 286,278,639,601,3 278,383,561,640,1 240,413,379,552,0
-/content/Realtime_Animal_Tracking/model_data/image1039.jpg 60,402,570,901,7 236,376,515,613,4 249,599,529,770,5 272,812,551,941,5 63,473,407,929,6 426,480,589,611,5
-/content/Realtime_Animal_Tracking/model_data/image1040.jpg 7,408,420,773,4 0,457,346,748,0 37,0,646,865,7 137,128,548,566,6
-/content/Realtime_Animal_Tracking/model_data/image1041.jpg 213,360,545,694,3 188,516,405,678,0 225,355,565,484,1 306,556,576,637,1
-/content/Realtime_Animal_Tracking/model_data/image1042.jpg 240,127,423,314,0 195,69,600,557,3 230,836,408,962,0 274,637,606,872,1 258,250,465,565,1 350,129,608,433,1 192,367,564,903,3 513,117,676,433,1
-/content/Realtime_Animal_Tracking/model_data/image1043.jpg 75,298,525,737,7 76,268,254,463,4 90,406,415,755,6 223,462,483,604,5 235,554,475,754,5
-/content/Realtime_Animal_Tracking/model_data/image1044.jpg 184,233,427,371,3 345,534,534,693,3 190,291,264,365,0 349,613,423,681,0 219,264,351,344,1
-/content/Realtime_Animal_Tracking/model_data/image1045.jpg 239,71,717,707,7 222,53,427,284,4 354,681,756,790,5 319,306,733,472,5 215,205,548,626,2
-/content/Realtime_Animal_Tracking/model_data/image1046.jpg 93,322,374,684,0 77,185,554,848,3 187,514,512,834,1 276,439,499,686,2 265,202,532,591,2
-/content/Realtime_Animal_Tracking/model_data/image1047.jpg 193,297,620,775,3 246,421,539,713,1 162,397,308,558,0 438,364,634,660,1 243,555,484,714,2
-/content/Realtime_Animal_Tracking/model_data/image1048.jpg 234,201,394,464,3 290,290,641,758,3 273,516,327,554,0 395,298,579,485,4 274,475,341,526,0 311,473,549,664,1 320,613,417,704,1
-/content/Realtime_Animal_Tracking/model_data/image1049.jpg 335,401,520,550,3 336,468,419,527,0 379,410,518,467,1
-/content/Realtime_Animal_Tracking/model_data/image1050.jpg 132,234,467,636,4 135,17,584,620,7 302,40,595,460,6
-/content/Realtime_Animal_Tracking/model_data/image1051.jpg 124,505,365,838,6 223,573,479,716,5 107,469,502,873,7 235,479,465,622,4 200,713,470,861,5
-/content/Realtime_Animal_Tracking/model_data/image1052.jpg 152,303,662,842,7 192,245,498,541,4 170,435,533,846,6 22,11,176,163,3
-/content/Realtime_Animal_Tracking/model_data/image1053.jpg 39,115,503,736,3 143,133,470,314,1 173,523,435,706,1 7,416,323,589,0 82,280,540,512,1
-/content/Realtime_Animal_Tracking/model_data/image1054.jpg 207,456,385,579,0 194,259,548,603,3 275,284,483,397,2 230,381,495,574,1
-/content/Realtime_Animal_Tracking/model_data/image1055.jpg 322,485,610,840,3 339,515,461,605,0 334,589,491,785,2 389,493,533,630,1
-/content/Realtime_Animal_Tracking/model_data/image1056.jpg 305,194,595,500,0
-/content/Realtime_Animal_Tracking/model_data/image1057.jpg 136,192,558,668,3 121,402,414,602,0 237,240,584,411,1 240,459,568,648,1
-/content/Realtime_Animal_Tracking/model_data/image1058.jpg 86,0,353,250,7 172,29,320,131,5 89,125,220,241,4 180,115,343,203,5 67,12,288,168,6
-/content/Realtime_Animal_Tracking/model_data/image1059.jpg 44,15,270,369,7 101,264,224,361,4 49,0,156,63,3 31,47,202,291,6 88,158,256,235,5
+/content/Realtime_Animal_Tracking/model_data/image951.jpg 70,37,308,345,3 71,110,203,293,1 133,66,239,178,0 0,69,167,208,1 
+/content/Realtime_Animal_Tracking/model_data/image952.jpg 0,125,712,587,7 332,176,716,610,4 183,173,510,552,6 21,205,310,606,4 
+/content/Realtime_Animal_Tracking/model_data/image953.jpg 147,177,696,593,7 237,194,518,413,6 520,168,712,359,4 338,241,445,510,5 477,289,628,572,5 
+/content/Realtime_Animal_Tracking/model_data/image954.jpg 452,333,634,516,1 516,265,887,510,7 598,308,852,491,6 407,247,729,530,3 164,271,256,401,0 686,282,929,456,4 89,288,348,562,3 
+/content/Realtime_Animal_Tracking/model_data/image955.jpg 106,36,759,589,3 563,137,746,258,0 348,210,643,491,1 573,273,861,571,2 574,159,806,404,0 208,248,534,461,2 383,349,801,681,2 
+/content/Realtime_Animal_Tracking/model_data/image956.jpg 328,307,540,959,5 18,318,201,894,5 88,250,492,725,4 43,0,558,475,6 0,32,540,950,7 
+/content/Realtime_Animal_Tracking/model_data/image957.jpg 321,425,457,590,3 73,210,155,329,0 7,270,155,546,1 349,424,394,488,0 0,133,305,601,3 367,440,440,542,2 490,174,547,336,3 
+/content/Realtime_Animal_Tracking/model_data/image958.jpg 57,174,575,635,3 361,232,562,523,1 16,421,287,696,1 153,159,383,381,0 377,521,539,690,1 
+/content/Realtime_Animal_Tracking/model_data/image959.jpg 362,268,631,609,3 457,277,564,419,0 415,326,625,584,2 413,360,580,527,1 
+/content/Realtime_Animal_Tracking/model_data/image960.jpg 296,222,878,532,7 241,251,542,516,4 545,229,873,505,4 329,206,641,461,0 
+/content/Realtime_Animal_Tracking/model_data/image961.jpg 135,152,199,257,3 163,159,192,191,0 154,175,198,231,1 466,89,500,171,3 
+/content/Realtime_Animal_Tracking/model_data/image962.jpg 246,220,388,391,3 345,193,509,385,3 327,230,383,293,0 303,252,375,353,1 441,230,502,341,1 256,277,310,388,1 
+/content/Realtime_Animal_Tracking/model_data/image963.jpg 271,120,610,600,7 395,286,538,607,5 619,253,952,715,7 776,370,921,740,5 428,150,603,316,4 567,348,687,581,5 673,390,797,704,5 662,214,957,583,6 284,192,528,451,6 283,271,456,573,5 
+/content/Realtime_Animal_Tracking/model_data/image964.jpg 133,127,250,286,3 156,130,202,180,0 179,161,253,244,1 
+/content/Realtime_Animal_Tracking/model_data/image965.jpg 473,287,676,525,4 478,230,922,594,7 624,217,925,476,6 658,264,771,572,5 
+/content/Realtime_Animal_Tracking/model_data/image966.jpg 8,12,524,563,6 12,0,644,616,7 0,147,745,650,3 239,63,596,557,4 
+/content/Realtime_Animal_Tracking/model_data/image967.jpg 0,142,603,865,7 85,81,519,652,4 0,314,581,894,6 20,400,356,963,5 
+/content/Realtime_Animal_Tracking/model_data/image968.jpg 3,64,755,554,7 460,77,764,348,4 128,194,418,570,5 39,11,569,475,6 
+/content/Realtime_Animal_Tracking/model_data/image969.jpg 23,338,202,492,4 529,226,821,615,7 89,332,302,500,6 21,316,328,516,7 676,213,871,393,4 342,262,574,454,6 312,268,567,566,7 537,303,757,530,6 307,374,410,572,5 446,310,565,501,2 315,292,455,481,4 
+/content/Realtime_Animal_Tracking/model_data/image970.jpg 252,202,602,442,6 250,240,755,580,7 498,266,721,479,4 
+/content/Realtime_Animal_Tracking/model_data/image971.jpg 60,56,564,588,3 14,164,333,636,2 0,60,438,471,6 
+/content/Realtime_Animal_Tracking/model_data/image972.jpg 151,61,483,415,4 129,83,747,635,7 276,14,664,400,6 
+/content/Realtime_Animal_Tracking/model_data/image973.jpg 72,57,180,203,0 18,58,204,263,3 110,41,397,287,3 250,57,382,191,1 124,172,343,313,2 0,86,134,251,1 332,23,420,149,0 183,75,340,169,2 421,60,495,266,1 
+/content/Realtime_Animal_Tracking/model_data/image974.jpg 356,88,923,596,7 340,227,579,463,4 598,241,741,565,5 454,99,868,395,6 776,242,904,585,5 461,286,600,557,5 457,411,581,506,5 
+/content/Realtime_Animal_Tracking/model_data/image975.jpg 56,122,613,575,7 347,194,641,509,4 123,154,428,472,6 
+/content/Realtime_Animal_Tracking/model_data/image976.jpg 358,534,551,756,7 385,533,531,653,4 318,543,561,757,3 
+/content/Realtime_Animal_Tracking/model_data/image977.jpg 373,71,859,680,7 63,235,583,811,7 386,81,920,486,6 281,313,562,707,4 15,257,542,642,6 617,247,819,591,5 349,606,525,784,5 186,435,424,777,5 
+/content/Realtime_Animal_Tracking/model_data/image978.jpg 92,145,399,518,3 472,207,591,473,5 265,143,587,466,3 207,385,332,487,1 254,174,376,334,0 296,167,600,472,7 
+/content/Realtime_Animal_Tracking/model_data/image979.jpg 447,248,506,322,4 445,244,583,381,7 
+/content/Realtime_Animal_Tracking/model_data/image980.jpg 129,34,787,583,3 322,56,702,485,0 121,355,296,497,0 467,224,744,624,1 421,249,642,543,0 
+/content/Realtime_Animal_Tracking/model_data/image981.jpg 280,70,831,487,3 381,65,615,278,0 279,217,517,466,1 440,171,801,394,1 
+/content/Realtime_Animal_Tracking/model_data/image982.jpg 358,20,674,472,3 478,178,685,570,1 529,142,655,323,0 
+/content/Realtime_Animal_Tracking/model_data/image983.jpg 360,203,564,388,4 332,181,723,422,7 445,224,711,382,6 
+/content/Realtime_Animal_Tracking/model_data/image984.jpg 200,267,478,489,7 260,282,417,401,6 438,320,544,452,4 187,312,311,486,5 
+/content/Realtime_Animal_Tracking/model_data/image985.jpg 385,71,834,656,4 335,37,850,600,7 582,294,793,624,5 
+/content/Realtime_Animal_Tracking/model_data/image986.jpg 87,249,710,749,3 125,416,284,728,1 287,253,535,483,0 403,317,673,731,1 
+/content/Realtime_Animal_Tracking/model_data/image987.jpg 706,366,890,552,4 560,509,741,599,1 13,375,450,644,7 720,368,793,480,0 626,367,912,587,7 
+/content/Realtime_Animal_Tracking/model_data/image988.jpg 522,135,723,416,4 581,94,866,351,6 537,71,866,587,7 
+/content/Realtime_Animal_Tracking/model_data/image989.jpg 85,145,476,511,7 543,29,912,483,7 593,42,913,305,6 662,183,807,452,5 812,194,919,445,5 523,170,703,380,4 113,153,402,418,6 63,259,161,522,5 
+/content/Realtime_Animal_Tracking/model_data/image990.jpg 5,113,686,813,4 0,11,820,831,7 359,324,754,952,5 127,470,848,935,6 
+/content/Realtime_Animal_Tracking/model_data/image991.jpg 12,40,703,637,3 146,30,664,374,6 135,165,213,312,1 
+/content/Realtime_Animal_Tracking/model_data/image992.jpg 156,127,190,178,1 
+/content/Realtime_Animal_Tracking/model_data/image993.jpg 304,99,398,231,3 160,233,226,310,3 326,104,361,146,0 182,231,219,268,0 322,119,383,195,1 304,129,335,202,1 161,234,201,293,2 315,153,367,236,1 176,238,217,284,1 
+/content/Realtime_Animal_Tracking/model_data/image994.jpg 326,153,392,259,0 254,201,412,375,1 380,167,444,356,1 79,125,465,377,3 
+/content/Realtime_Animal_Tracking/model_data/image995.jpg 218,157,493,362,0 307,373,728,769,3 493,506,768,750,1 446,415,664,591,0 298,176,524,394,1 172,142,645,533,3 
+/content/Realtime_Animal_Tracking/model_data/image996.jpg 357,405,446,473,7 
+/content/Realtime_Animal_Tracking/model_data/image997.jpg 23,190,479,713,7 50,213,253,457,4 205,396,402,708,5 356,425,514,766,5 
+/content/Realtime_Animal_Tracking/model_data/image998.jpg 106,34,557,565,4 0,0,587,789,7 17,227,315,720,5 
+/content/Realtime_Animal_Tracking/model_data/image999.jpg 150,92,747,586,3 518,70,753,333,0 141,304,633,526,1 236,350,493,476,1 407,291,548,416,1 347,488,531,584,1 413,260,638,413,2 
+/content/Realtime_Animal_Tracking/model_data/image1000.jpg 234,199,271,250,3 305,182,364,227,3 56,309,94,369,3 188,299,246,357,3 85,154,128,198,3 343,243,383,285,3 88,155,127,193,7 
+/content/Realtime_Animal_Tracking/model_data/image1001.jpg 188,279,473,440,7 729,152,886,318,4 237,306,387,407,6 381,285,516,392,4 341,386,417,442,5 205,319,330,439,5 702,122,914,511,3 716,165,905,485,7 
+/content/Realtime_Animal_Tracking/model_data/image1002.jpg 13,117,897,625,7 507,156,902,610,4 
+/content/Realtime_Animal_Tracking/model_data/image1003.jpg 707,267,840,414,0 238,108,621,464,6 166,42,768,588,7 439,366,826,652,6 194,281,378,560,5 
+/content/Realtime_Animal_Tracking/model_data/image1004.jpg 274,108,564,358,4 469,120,825,513,6 315,127,938,583,7 591,223,790,591,5 
+/content/Realtime_Animal_Tracking/model_data/image1005.jpg 155,172,339,226,6 
+/content/Realtime_Animal_Tracking/model_data/image1006.jpg 224,35,912,576,7 446,49,858,495,4 605,316,836,606,5 356,255,695,526,5 
+/content/Realtime_Animal_Tracking/model_data/image1007.jpg 430,331,808,727,7 531,435,668,721,5 381,321,564,494,4 560,315,828,590,6 340,197,452,365,0 132,184,473,621,7 212,321,389,631,5 161,162,473,601,3 
+/content/Realtime_Animal_Tracking/model_data/image1008.jpg 332,163,680,456,6 157,151,729,531,7 188,320,421,555,4 387,281,549,544,5 
+/content/Realtime_Animal_Tracking/model_data/image1009.jpg 145,95,450,753,3 166,365,358,680,2 
+/content/Realtime_Animal_Tracking/model_data/image1010.jpg 196,89,525,403,0 77,77,685,562,3 338,271,571,642,1 
+/content/Realtime_Animal_Tracking/model_data/image1011.jpg 33,0,662,632,3 200,0,585,488,0 268,228,501,438,0 22,166,313,635,1 244,13,674,548,1 
+/content/Realtime_Animal_Tracking/model_data/image1012.jpg 224,90,487,323,0 257,221,649,522,1 77,98,640,541,3 654,52,905,421,3 79,440,171,647,0 103,246,392,517,1 737,86,913,308,0 34,481,302,657,3 
+/content/Realtime_Animal_Tracking/model_data/image1013.jpg 642,366,724,476,3 575,304,662,398,3 402,530,525,675,3 192,123,234,162,0 245,190,318,275,3 379,296,481,373,3 314,200,378,259,3 399,526,512,634,6 158,134,240,195,3 
+/content/Realtime_Animal_Tracking/model_data/image1014.jpg 422,181,617,389,7 428,243,496,355,5 421,191,599,300,6 
+/content/Realtime_Animal_Tracking/model_data/image1015.jpg 
+/content/Realtime_Animal_Tracking/model_data/image1016.jpg 356,614,481,767,3 208,288,409,553,3 417,620,473,684,0 253,320,414,467,1 269,299,374,374,0 
+/content/Realtime_Animal_Tracking/model_data/image1017.jpg 0,291,311,662,7 51,288,285,606,4 
+/content/Realtime_Animal_Tracking/model_data/image1018.jpg 242,2,533,290,0 0,1,746,673,3 5,129,336,638,1 489,152,733,593,1 160,242,577,511,2 
+/content/Realtime_Animal_Tracking/model_data/image1019.jpg 94,55,860,639,7 308,98,694,527,4 528,295,787,662,5 559,103,869,550,6 174,408,519,617,5 
+/content/Realtime_Animal_Tracking/model_data/image1020.jpg 151,312,473,706,3 188,313,334,475,0 250,363,433,594,1 139,531,273,693,1 
+/content/Realtime_Animal_Tracking/model_data/image1021.jpg 389,345,586,570,3 465,375,565,513,1 442,334,521,433,0 
+/content/Realtime_Animal_Tracking/model_data/image1022.jpg 363,74,818,533,4 215,0,799,613,7 
+/content/Realtime_Animal_Tracking/model_data/image1023.jpg 208,46,842,553,7 499,237,791,495,5 168,29,593,487,4 395,248,616,529,5 535,147,942,534,6 
+/content/Realtime_Animal_Tracking/model_data/image1024.jpg 189,397,398,566,7 196,387,392,520,6 190,444,282,580,5 308,456,391,573,4 
+/content/Realtime_Animal_Tracking/model_data/image1025.jpg 394,76,507,219,3 
+/content/Realtime_Animal_Tracking/model_data/image1026.jpg 255,208,826,671,7 274,299,822,681,6 215,291,636,679,4 501,388,774,713,5 
+/content/Realtime_Animal_Tracking/model_data/image1027.jpg 937,139,1824,1280,7 33,205,929,1216,7 845,289,1326,792,4 488,359,843,793,4 173,524,545,1162,5 1244,555,1566,1201,5 36,153,512,967,6 1114,177,1816,756,6 
+/content/Realtime_Animal_Tracking/model_data/image1028.jpg 374,54,845,384,6 300,25,822,574,7 295,208,547,474,4 556,226,725,634,5 696,295,835,564,5 410,427,536,576,5 
+/content/Realtime_Animal_Tracking/model_data/image1029.jpg 228,104,642,495,7 347,148,702,403,6 202,119,402,307,4 405,256,549,496,5 
+/content/Realtime_Animal_Tracking/model_data/image1030.jpg 248,85,461,302,7 22,119,209,274,6 304,91,447,245,6 252,105,381,240,4 8,101,218,290,7 
+/content/Realtime_Animal_Tracking/model_data/image1031.jpg 409,250,544,402,3 446,269,513,370,1 
+/content/Realtime_Animal_Tracking/model_data/image1032.jpg 52,39,323,276,3 183,293,404,358,1 114,39,294,205,4 
+/content/Realtime_Animal_Tracking/model_data/image1033.jpg 407,207,792,614,3 509,197,644,411,0 503,220,710,538,1 421,306,521,498,1 640,245,802,555,2 
+/content/Realtime_Animal_Tracking/model_data/image1034.jpg 330,46,881,450,3 480,162,885,407,1 430,51,619,265,0 300,126,524,465,1 
+/content/Realtime_Animal_Tracking/model_data/image1035.jpg 221,120,517,494,3 335,186,495,446,1 249,240,349,392,1 261,119,387,224,0 
+/content/Realtime_Animal_Tracking/model_data/image1036.jpg 350,245,793,632,3 503,300,729,576,1 
+/content/Realtime_Animal_Tracking/model_data/image1037.jpg 153,105,649,509,6 0,149,610,855,7 
+/content/Realtime_Animal_Tracking/model_data/image1038.jpg 278,286,601,639,3 383,278,640,561,1 413,240,552,379,0 
+/content/Realtime_Animal_Tracking/model_data/image1039.jpg 402,60,901,570,7 376,236,613,515,4 599,249,770,529,5 812,272,941,551,5 473,63,929,407,6 480,426,611,589,5 
+/content/Realtime_Animal_Tracking/model_data/image1040.jpg 408,7,773,420,4 457,0,748,346,0 0,37,865,646,7 128,137,566,548,6 
+/content/Realtime_Animal_Tracking/model_data/image1041.jpg 360,213,694,545,3 516,188,678,405,0 355,225,484,565,1 556,306,637,576,1 
+/content/Realtime_Animal_Tracking/model_data/image1042.jpg 127,240,314,423,0 69,195,557,600,3 836,230,962,408,0 637,274,872,606,1 250,258,565,465,1 129,350,433,608,1 367,192,903,564,3 117,513,433,676,1 
+/content/Realtime_Animal_Tracking/model_data/image1043.jpg 298,75,737,525,7 268,76,463,254,4 406,90,755,415,6 462,223,604,483,5 554,235,754,475,5 
+/content/Realtime_Animal_Tracking/model_data/image1044.jpg 233,184,371,427,3 534,345,693,534,3 291,190,365,264,0 613,349,681,423,0 264,219,344,351,1 
+/content/Realtime_Animal_Tracking/model_data/image1045.jpg 71,239,707,717,7 53,222,284,427,4 681,354,790,756,5 306,319,472,733,5 205,215,626,548,2 
+/content/Realtime_Animal_Tracking/model_data/image1046.jpg 322,93,684,374,0 185,77,848,554,3 514,187,834,512,1 439,276,686,499,2 202,265,591,532,2 
+/content/Realtime_Animal_Tracking/model_data/image1047.jpg 297,193,775,620,3 421,246,713,539,1 397,162,558,308,0 364,438,660,634,1 555,243,714,484,2 
+/content/Realtime_Animal_Tracking/model_data/image1048.jpg 201,234,464,394,3 290,290,758,641,3 516,273,554,327,0 298,395,485,579,4 475,274,526,341,0 473,311,664,549,1 613,320,704,417,1 
+/content/Realtime_Animal_Tracking/model_data/image1049.jpg 401,335,550,520,3 468,336,527,419,0 410,379,467,518,1 
+/content/Realtime_Animal_Tracking/model_data/image1050.jpg 234,132,636,467,4 17,135,620,584,7 40,302,460,595,6 
+/content/Realtime_Animal_Tracking/model_data/image1051.jpg 505,124,838,365,6 573,223,716,479,5 469,107,873,502,7 479,235,622,465,4 713,200,861,470,5 
+/content/Realtime_Animal_Tracking/model_data/image1052.jpg 303,152,842,662,7 245,192,541,498,4 435,170,846,533,6 11,22,163,176,3 
+/content/Realtime_Animal_Tracking/model_data/image1053.jpg 115,39,736,503,3 133,143,314,470,1 523,173,706,435,1 416,7,589,323,0 280,82,512,540,1 
+/content/Realtime_Animal_Tracking/model_data/image1054.jpg 456,207,579,385,0 259,194,603,548,3 284,275,397,483,2 381,230,574,495,1 
+/content/Realtime_Animal_Tracking/model_data/image1055.jpg 485,322,840,610,3 515,339,605,461,0 589,334,785,491,2 493,389,630,533,1 
+/content/Realtime_Animal_Tracking/model_data/image1056.jpg 194,305,500,595,0 
+/content/Realtime_Animal_Tracking/model_data/image1057.jpg 192,136,668,558,3 402,121,602,414,0 240,237,411,584,1 459,240,648,568,1 
+/content/Realtime_Animal_Tracking/model_data/image1058.jpg 0,86,250,353,7 29,172,131,320,5 125,89,241,220,4 115,180,203,343,5 12,67,168,288,6 
+/content/Realtime_Animal_Tracking/model_data/image1059.jpg 15,44,369,270,7 264,101,361,224,4 0,49,63,156,3 47,31,291,202,6 158,88,235,256,5 
