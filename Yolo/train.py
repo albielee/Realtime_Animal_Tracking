@@ -9,7 +9,7 @@
 #
 #================================================================
 import os
-import matplotlib as plt
+import matplotlib.pyplot as plt
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 from tensorflow.python.client import device_lib
