@@ -168,6 +168,7 @@ def main():
         plt.xlabel('Epochs')
         plt.ylabel('Total Loss')
         plt.title('YoloV4 - Seq-NMS')
+        plt.plot(epo_list, tot_loss)
         plt.legend()
         plt.savefig('YoloV4_Seq-NMS.png')
 
